@@ -12,6 +12,13 @@ const sumAll = function(x, y) {
         }
         return sum;
     }
+    else {
+        let sum = 0;
+        for (let i = y; i <= x; i++){
+            sum += i;
+        }
+        return sum;
+    }
     
 
 };
