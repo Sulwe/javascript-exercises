@@ -1,12 +1,13 @@
 const removeFromArray = function(arr, ...args) {
-    for (const arg of args){
-            const removedFrom = arr.filter(function(element){
-                return element !== arg;
+    const removedArray = [];
 
-            });
-                
-            return removedFrom;
-    };
+    arr.forEach(element => {
+        if (!args.includes(element)){
+            removedArray.push(element);
+        }
+        
+    });
+    return removedArray;
 
 };
 
